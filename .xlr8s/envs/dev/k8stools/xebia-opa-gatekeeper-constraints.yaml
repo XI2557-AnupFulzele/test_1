@@ -4,13 +4,4 @@ module:
   ref:
     branch: v3.2.5
 name: xebia-opa-gatekeeper-constraints
-vars:
-  K8sDisableHostNetworking:
-  - enforcementAction: deny
-    filters:
-      excludedNamespaces:
-      - dsds
-      namespaces:
-      - xzx
-    name: test
-    severity: high
+vars: {}
