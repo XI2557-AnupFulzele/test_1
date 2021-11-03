@@ -20,7 +20,7 @@ vars:
     - enforcementAction: deny
       filters:
         namespaces:
-        - ass
+        - xxx
       name: asas
       severity: medium
     K8sBlockNpLb: []
