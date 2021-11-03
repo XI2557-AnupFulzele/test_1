@@ -1,1 +1,9 @@
-{}
+K8sDisableHostNetworking:
+- enforcementAction: deny
+  filters:
+    excludedNamespaces:
+    - dsds
+    namespaces:
+    - xzx
+  name: test
+  severity: high
