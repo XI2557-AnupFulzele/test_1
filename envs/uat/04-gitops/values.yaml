@@ -1,0 +1,11 @@
+env: uat
+git:
+  repoUrl: git@github.com:XI2557-AnupFulzele/test_1.git
+  revision: main
+tools:
+- chart: helm-xebia-opa-gatekeeper@v3.24.7
+  name: xebia-opa-gatekeeper-templates
+  vendor: xebia
+- chart: helm-xebia-opa-gatekeeper-constraints@v3.2.5
+  name: xebia-opa-gatekeeper-constraints
+  vendor: xebia
