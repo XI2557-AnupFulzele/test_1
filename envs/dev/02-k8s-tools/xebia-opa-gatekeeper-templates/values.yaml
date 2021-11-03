@@ -1,1 +1,22 @@
-{}
+gatekeeper:
+  controllerManager:
+    resources:
+      limits:
+        cpu: 1000m
+        memory: 512Mi
+      requests:
+        cpu: 100m
+        memory: 256Mi
+  emitAdmissionEvents: false
+  image:
+    pullPolicy: IfNotPresent
+    pullSecrets: []
+    repository: openpolicyagent/gatekeeper
+    tag: v3.5.1
+  loglevel: INFO
+  namespace: gatekeeper-system
+  podAnnotations:
+    container.seccomp.security.alpha.kubernetes.io/manager: runtime/default
+  podCountLimit: 100
+  podLabels: {}
+  replicas: 4
