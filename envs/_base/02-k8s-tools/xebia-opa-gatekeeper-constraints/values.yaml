@@ -1,4 +1,10 @@
-K8sAllowedRepos: []
+K8sAllowedRepos:
+- enforcementAction: deny
+  filters:
+    namespaces:
+    - ass
+  name: asas
+  severity: medium
 K8sBlockNpLb: []
 K8sCapsOnReplica: []
 K8sDisableHostNetworking: []
