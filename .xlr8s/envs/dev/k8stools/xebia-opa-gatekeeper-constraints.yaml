@@ -10,7 +10,10 @@ vars:
     filters:
       namespaces:
       - xxx
-    name: asas
+    name: policy_1
+    params:
+      repos:
+      - temp
     severity: medium
   - enforcementAction: deny
     filters:
