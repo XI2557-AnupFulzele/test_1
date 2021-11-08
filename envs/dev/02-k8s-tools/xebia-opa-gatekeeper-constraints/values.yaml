@@ -19,3 +19,9 @@ K8sAllowedRepos:
     repos:
     - abcd
   severity: high
+- enforcementAction: deny
+  filters: {}
+  params:
+    repos:
+    - as
+  severity: high
