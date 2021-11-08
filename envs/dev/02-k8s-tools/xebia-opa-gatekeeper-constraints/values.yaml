@@ -1,1 +1,7 @@
-{}
+K8sCapsOnReplica:
+- enforcementAction: deny
+  filters: {}
+  params:
+    maxReplicas: 12
+    minReplicas: 12
+  severity: high

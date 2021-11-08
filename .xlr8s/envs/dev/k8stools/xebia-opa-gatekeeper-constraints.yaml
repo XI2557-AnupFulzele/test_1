@@ -4,4 +4,11 @@ module:
   ref:
     branch: v3.2.5
 name: xebia-opa-gatekeeper-constraints
-vars: {}
+vars:
+  K8sCapsOnReplica:
+  - enforcementAction: deny
+    filters: {}
+    params:
+      maxReplicas: 12
+      minReplicas: 12
+    severity: high
