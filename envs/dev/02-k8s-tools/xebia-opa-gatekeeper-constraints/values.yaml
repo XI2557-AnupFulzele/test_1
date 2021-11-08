@@ -8,7 +8,7 @@ K8sAllowedRepos:
 - enforcementAction: deny
   filters:
     excludedNamespaces:
-    - some
+    - abcd
     namespaces:
     - some
   name: policy_namew
