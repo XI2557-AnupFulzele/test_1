@@ -16,16 +16,3 @@ K8sAllowedRepos:
     repos:
     - abcd
   severity: high
-K8sCapsOnReplica:
-- enforcementAction: deny
-  filters: {}
-  params:
-    maxReplicas: 12
-    minReplicas: 12
-  severity: high
-- enforcementAction: deny
-  filters: {}
-  params:
-    maxReplicas: 32
-    minReplicas: 32
-  severity: high
