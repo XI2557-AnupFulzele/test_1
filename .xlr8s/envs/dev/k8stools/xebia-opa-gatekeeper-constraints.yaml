@@ -5,6 +5,24 @@ module:
     branch: v3.2.5
 name: xebia-opa-gatekeeper-constraints
 vars:
+  K8sAllowedRepos:
+  - enforcementAction: deny
+    filters:
+      namespaces:
+      - xxx
+    name: asas
+    severity: medium
+  - enforcementAction: deny
+    filters:
+      excludedNamespaces:
+      - some
+      namespaces:
+      - some
+    name: policy_namew
+    params:
+      repos:
+      - abcd
+    severity: high
   K8sCapsOnReplica:
   - enforcementAction: deny
     filters: {}
