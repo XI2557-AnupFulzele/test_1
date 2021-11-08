@@ -1,3 +1,16 @@
+K8sAllowedRepos:
+- enforcementAction: deny
+  filters:
+    namespaces:
+    - xxx
+  name: asas
+  severity: medium
+- enforcementAction: deny
+  filters: {}
+  params:
+    repos:
+    - sadsa
+  severity: high
 K8sCapsOnReplica:
 - enforcementAction: deny
   filters: {}
