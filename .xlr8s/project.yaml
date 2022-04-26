@@ -4,7 +4,9 @@ envs:
   path: .xlr8s/envs/dev/env.yaml
 - name: uat
   path: .xlr8s/envs/uat/env.yaml
-git: null
+git:
+  repoUrl: git@github.com:XI2557-AnupFulzele/test_1.git
+  revision: main
 modules:
   k8stools:
   - module: git@github.com:xebiaww-apps/helm-xebia-opa-gatekeeper.git
@@ -13,6 +15,7 @@ modules:
   - module: git@github.com:xebiaww-apps/helm-xebia-opa-gatekeeper-constraints.git
     ref:
       branch: v3.2.5
+name: dev-3240
 vars:
   apps: null
   policy:
